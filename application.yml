@@ -1,6 +1,4 @@
-spring:
-  application:
-    name: kartikey
+
 
 eureka:
   instance:
