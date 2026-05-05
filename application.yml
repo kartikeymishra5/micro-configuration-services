@@ -1,6 +1,12 @@
-eureka.instance.prefer-ip-address=true
-eureka.client.feach-registry=true
-eureka.client.register-with-eureka=true
-eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
-spring.application.name = kartikey
+spring:
+  application:
+    name: kartikey
 
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true   # (feach गलत था → fetch)
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
